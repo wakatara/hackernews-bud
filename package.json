@@ -1,0 +1,8 @@
+{
+  "name": "bud_hello",
+  "private": true,
+  "dependencies": {
+    "livebud": "0.1.7",
+    "svelte": "3.47.0"
+  }
+}
