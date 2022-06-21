@@ -1,4 +1,4 @@
-module github.com/wakatara/bud_hello
+module github.com/wakatara/hackernews-bud
 
 go 1.18
 
