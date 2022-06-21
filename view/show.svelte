@@ -1,8 +1,13 @@
 <script>
+  import Header from './Header.svelte'
+  import Story from './Story.svelte'
+  import Comment from './Comment.svelte'
   export let story = {}
 </script>
 
-<h1>Showing Story</h1>
+<Header />
+
+<Story {story} />
 
 <table border="1" cellpadding="10">
   <thead>

@@ -1,11 +1,16 @@
 <script>
-  import Header from '/.Header.svelte'
+  import Header from './Header.svelte'
+  import Story from './Story.svelte'
   export let stories = []
 </script>
 
 <Header />
 
-<table border="1" cellpadding="10">
+{#each stories as story}
+  <Story {story} />
+{/each}
+
+<!-- <table border="1" cellpadding="10">
   {#if stories.length > 0}
     <thead>
       {#each Object.keys(stories[0]) as key}
@@ -24,7 +29,7 @@
       {/each}
     </tr>
   {/each}
-</table>
+</table> -->
 
 <style>
   table {
